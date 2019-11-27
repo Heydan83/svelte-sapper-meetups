@@ -1,10 +1,17 @@
 <script>
-	export let segment;
+  import Header from "../components/UI/Header.svelte";
+
+  export let segment;
 </script>
 
 <style>
+  main {
+    margin-top: 5rem;
+  }
 </style>
 
 <main>
-	<slot></slot>
+  <slot />
 </main>
+
+<Header />
